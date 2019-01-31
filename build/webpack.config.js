@@ -21,7 +21,7 @@ const config = {
         ], {
           // Absolute path to your webpack root folder (paths appended to this)
           // Default: root of your package
-          root:  __dirname,
+          root:  path.resolve(__dirname, '../'),
           exclude:  [],
           // Write logs to console.
           verbose: true,

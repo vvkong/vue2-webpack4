@@ -21,6 +21,7 @@
   </div>
 </template>
 <script>
+require('@babel/polyfill')
 class Echo {
   constructor (msg) {
     this.msg = msg
@@ -54,9 +55,6 @@ export default {
           resolve(`It's timeout.`)
         }, 3000)
       }())
-    },
-    $test () {
-
     }
   }
 }
