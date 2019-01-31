@@ -1,5 +1,5 @@
 ### 零、前言
-    本文从零开始vu2+webpack4脚手架搭建，各种步骤配置都可从最后的“参考”中获得，采用yarn作为包管理工具，mac电脑，vs code作为ide开发工具。温馨提示：所有命令执行都是在项目目录（vue-demo)中执行。根据本教程走一遍（记得看参考中对应的连接），webpack4的常用插件、加载器基本熟悉，可应付大部分开发。
+本文从零开始vu2+webpack4脚手架搭建，各种步骤配置都可从最后的“参考”中获得，采用yarn作为包管理工具，mac电脑，vs code作为ide开发工具。温馨提示：所有命令执行都是在项目目录（vue-demo)中执行。根据本教程走一遍（记得看参考中对应的连接），webpack4的常用插件、加载器基本熟悉，可应付大部分开发。
 ### 一、创建项目
     `mkdir vue-demo && cd vue-demo && yarn init`
 
@@ -752,17 +752,17 @@ module.exports = config
 6. [css-loader](https://www.npmjs.com/package/css-loader)
 7. [postcss](https://www.npmjs.com/package/postcss)
 8. [autoprefixer](https://github.com/postcss/autoprefixer)
-8. [url-loader](https://www.npmjs.com/package/url-loader)
-9. [file-loader](https://www.npmjs.com/package/file-loader)
-10. [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
-11. [webpack optimization](https://webpack.js.org/configuration/optimization/)
-12. [split-chunks-plugin](https://webpack.js.org/plugins/split-chunks-plugin/)
-13. [babel-loader](https://github.com/babel/babel-loader)
-14. [vue eslint](https://eslint.vuejs.org/user-guide/#installation)
-15. [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)
-16. [JavaScript Standard Style ](https://standardjs.com/readme-zhcn.html)
-17. [eslint-loader](https://github.com/webpack-contrib/eslint-loader)
-13. [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin)
-10. [webpack-merge](https://www.npmjs.com/package/webpack-merge)
-11. [webpack-dev-server](https://github.com/webpack/webpack-dev-server#getting-started)
-12. [devserver配置](https://webpack.js.org/configuration/dev-server/#devserver)
+9. [url-loader](https://www.npmjs.com/package/url-loader)
+10. [file-loader](https://www.npmjs.com/package/file-loader)
+11. [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
+12. [webpack optimization](https://webpack.js.org/configuration/optimization/)
+13. [split-chunks-plugin](https://webpack.js.org/plugins/split-chunks-plugin/)
+14. [babel-loader](https://github.com/babel/babel-loader)
+15. [vue eslint](https://eslint.vuejs.org/user-guide/#installation)
+16. [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)
+17. [JavaScript Standard Style ](https://standardjs.com/readme-zhcn.html)
+18. [eslint-loader](https://github.com/webpack-contrib/eslint-loader)
+19. [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin)
+20. [webpack-merge](https://www.npmjs.com/package/webpack-merge)
+21. [webpack-dev-server](https://github.com/webpack/webpack-dev-server#getting-started)
+22. [devserver配置](https://webpack.js.org/configuration/dev-server/#devserver)
