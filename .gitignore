@@ -15,4 +15,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 
-build
+build/dist
