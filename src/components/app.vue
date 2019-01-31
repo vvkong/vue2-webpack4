@@ -48,6 +48,7 @@ export default {
       let sum = 2 ** 10
       alert(`求幂运算符（2 ** 10）= ${sum}`)
     },
+    // async特性，切记添加require('@babel/polyfill')在前面
     async getA () {
       return new Promise(new function (resolve, rejuect) {
         console.log('====== getA')
