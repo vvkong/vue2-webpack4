@@ -14,6 +14,15 @@ const config = webpackMerge.smart(baseConfig, {
     module:{
       rules: [
         {
+          test: /\.less$/,
+          use: [
+            MiniCssExtractPlugin.loader,//devMode ? 'vue-style-loader' : MiniCssExtractPlugin.loader,
+            'css-loader',
+            'postcss-loader',
+            'less-loader'
+          ]
+        },
+        {
           test: /\.css$/,
           use: [
             MiniCssExtractPlugin.loader,//devMode ? 'vue-style-loader' : MiniCssExtractPlugin.loader,

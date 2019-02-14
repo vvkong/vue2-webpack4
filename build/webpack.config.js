@@ -7,14 +7,18 @@ const config = {
   entry: path.resolve(__dirname, '../src/index.js'), // 为消除异议，明确指定
   //entry: './src/index.js',// 相对路径这里不是基于本文件的位置，而是工程目录，所以不是../src/index.js
   output: {
-      filename: 'bundle.js',
-      path: path.resolve(__dirname, 'dist')
+      filename: 'js/[name].bundle.js',
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: path.join(__dirname, 'dist/'), // 切记要用join使其转为字符串时后面有/,保证引用路径拼接成功
+  },
+  resolve: {
+    extensions: ['.js', '.vue', '.less', '.css', '.scss'],
   },
   plugins:[
       new VueLoaderPlugin(),
       new HtmlWebpackPlugin({
           title: 'Vue2 && Webpack4',
-          // template: './src/index.html'
+          // template: './src/index.html',
       }),
       new CleanWebpackPlugin([
           path.resolve(__dirname, 'dist')
@@ -36,12 +40,12 @@ const config = {
   // 新增vue-loader配置
   module:{
     rules: [
-        {
-          enforce: "pre",
-          test: /\.(vue|js)$/,
-          exclude: /node_modules/,
-          loader: "eslint-loader"
-        },
+        // {
+        //   enforce: "pre",
+        //   test: /\.(vue|js|jsx)$/,
+        //   exclude: /node_modules/,
+        //   loader: "eslint-loader"
+        // },
         {
             test: /\.m?js$/,
             exclude: /(node_modules|bower_components)/,
@@ -71,7 +75,7 @@ const config = {
                     loader: 'url-loader',
                     options: {
                         // 自定义输出命名规则
-                        name: 'resources/[name].[hash:8].[ext]',
+                        name: '/static/img/[name].[ext]',
                         // 图片转为base64的最大阈值
                         limit: 8192,
                         // 当大于limit时采用file-loader加载器处理，默认即是file-loader
